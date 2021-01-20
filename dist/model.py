@@ -13,8 +13,8 @@ def load_data(path):
         return pickle.load(f)
 
 
-x_train, y_train = load_data('../datasets/train_dataset.pickle')
-x_test, y_test = load_data('../datasets/validation_dataset.pickle')
+x_train, y_train = load_data('./datasets/train_dataset.pickle')
+x_test, y_test = load_data('./datasets/validation_dataset.pickle')
 
 def binary_model():
     # create model

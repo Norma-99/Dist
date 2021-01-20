@@ -9,9 +9,9 @@ CONFIG_FOLDER="/scratch/nas/4/norma/Dist/configs"
 
 for i in 1
 do
-	for j in 1
+	for j in {2..50}
 	do
-		$PYTHON -m fog_embedded --config=$CONFIG_FOLDER/${i}nodes.json
+		$PYTHON -m differential_privacy --config=$CONFIG_FOLDER/${i}nodes.json
 		mv ./results/${i}nodes/dist_${i}nodes.csv ./results/${i}nodes/dist_${i}nodes_it${j}.csv
 	done
 done

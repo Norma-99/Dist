@@ -5,13 +5,12 @@ from differential_privacy.dataset import Dataset
 from differential_privacy.gradient import Gradient
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
-from tensorflow.keras.optimizers import SGD
 
 
 class NeuralNetwork:
     def __init__(self, tf_model, epochs, validation_dataset, trace_path):
         self.tf_model: tf.keras.Model = tf_model
-        self.tf_model.compile(optimizer=SGD, loss='binary_crossentropy', metrics=['accuracy'])
+        self.tf_model.compile(optimizer='sgd', loss='binary_crossentropy', metrics=['accuracy'])
         self.epochs: int = epochs
         self.validation_dataset: Dataset = validation_dataset
         self.trace_path = trace_path

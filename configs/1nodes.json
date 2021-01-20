@@ -2,7 +2,7 @@
     "server_config":{
       "dataset_path": "./datasets/validation_dataset.pickle",
       "model_path": "./configs/model.json",
-      "trace_path": "./results/dist_1nodes.csv",
+      "trace_path": "./results/1nodes/dist_1nodes.csv",
       "epochs": 1
     },
     "fog_node_config": {

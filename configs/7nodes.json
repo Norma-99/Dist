@@ -2,7 +2,7 @@
     "server_config":{
       "dataset_path": "./datasets/validation_dataset.pickle",
       "model_path": "./configs/model.json",
-      "trace_path": "./results/5nodes/dist_5nodes.csv",
+      "trace_path": "./results/7nodes/dist_7nodes.csv",
       "epochs": 1
     },
     "fog_node_config": {
@@ -12,6 +12,6 @@
     "device_config": {
       "splittable_dataset": "./datasets/train_dataset.pickle"
     },
-    "fog_node_count": 5,
+    "fog_node_count": 7,
     "iterations": 8
   }

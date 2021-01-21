@@ -12,6 +12,6 @@
     "device_config": {
       "splittable_dataset": "./datasets/train_dataset.pickle"
     },
-    "fog_node_count": 1,
+    "fog_node_count": 3,
     "iterations": 8
   }

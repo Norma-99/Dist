@@ -7,7 +7,7 @@
 PYTHON="/scratch/nas/4/norma/venv/bin/python"
 CONFIG_FOLDER="/scratch/nas/4/norma/Dist/configs" 
 
-for i in 3 5
+for i in 3 5 7 9
 do
 	for j in {1..50}
 	do

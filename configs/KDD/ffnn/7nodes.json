@@ -1,0 +1,17 @@
+{
+    "server_config":{
+      "dataset_path": "./datasets/KDD/validation_dataset.pickle",
+      "model_path": "./configs/KDD/model.json",
+      "trace_path": "./results/KDD/ffnn/7nodes/dist_7nodes.csv",
+      "epochs": 1
+    },
+    "fog_node_config": {
+      "device_count": 2,
+      "gradient_folder": "pass"
+    },
+    "device_config": {
+      "splittable_dataset": "./datasets/KDD/train_dataset.pickle"
+    },
+    "fog_node_count": 7,
+    "iterations": 10
+  }

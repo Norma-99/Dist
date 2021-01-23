@@ -1,7 +1,7 @@
 {
     "server_config":{
       "dataset_path": "./datasets/KDD/validation_dataset.pickle",
-      "model_path": "./configs/KDD/model.json",
+      "model_path": "./configs/KDD/ffnn/model.json",
       "trace_path": "./results/KDD/ffnn/1nodes/dist_1nodes.csv",
       "epochs": 1
     },

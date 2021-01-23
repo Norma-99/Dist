@@ -1,8 +1,8 @@
 {
     "server_config":{
-      "dataset_path": "./datasets/validation_dataset.pickle",
-      "model_path": "./configs/model.json",
-      "trace_path": "./results/5nodes/dist_5nodes.csv",
+      "dataset_path": "./datasets/Bot/validation_dataset.pickle",
+      "model_path": "./configs/Bot/model.json",
+      "trace_path": "./results/Bot/ffnn/5nodes/dist_5nodes.csv",
       "epochs": 1
     },
     "fog_node_config": {
@@ -10,8 +10,8 @@
       "gradient_folder": "pass"
     },
     "device_config": {
-      "splittable_dataset": "./datasets/train_dataset.pickle"
+      "splittable_dataset": "./datasets/Bot/train_dataset.pickle"
     },
     "fog_node_count": 5,
-    "iterations": 8
+    "iterations": 15
   }

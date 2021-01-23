@@ -34,7 +34,7 @@ model = binary_model()
 
 # fit the model
 model.compile(optimizer="SGD", loss='binary_crossentropy', metrics=['accuracy'])
-model.fit(x_train, y_train, validation_data=(x_test, y_test), batch_size=64, epochs=8, verbose=2)
+model.fit(x_train, y_train, validation_data=(x_test, y_test), batch_size=64, epochs=15, verbose=2)
 
 
 

@@ -6,4 +6,5 @@
 
 PYTHON="/scratch/nas/4/norma/venv/bin/python"
 
-$PYTHON dist/model.py
+$PYTHON dist/Bot/bot_lstm.py
+

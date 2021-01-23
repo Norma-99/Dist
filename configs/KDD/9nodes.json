@@ -2,7 +2,7 @@
     "server_config":{
       "dataset_path": "./datasets/Bot/validation_dataset.pickle",
       "model_path": "./configs/Bot/model.json",
-      "trace_path": "./results/Bot/ffnn/9nodes/dist_9nodes.csv",
+      "trace_path": "./results/Bot/lstm/9nodes/dist_9nodes.csv",
       "epochs": 1
     },
     "fog_node_config": {
@@ -13,5 +13,5 @@
       "splittable_dataset": "./datasets/Bot/train_dataset.pickle"
     },
     "fog_node_count": 9,
-    "iterations": 15
+    "iterations": 30
   }

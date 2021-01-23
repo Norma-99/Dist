@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import pickle
 
-df = pd.read_csv('../datasets/Bot/Shuffle_category.csv')
+df = pd.read_csv('./datasets/Bot/Shuffle_category.csv')
 df=df.fillna('0')
 print(df.dtypes)
 proc = df[["c","d","e","f"]].to_numpy()
@@ -51,8 +51,8 @@ y_test = y_testdf.to_numpy()
 # Save information into .pickle format
 validation_pair = x_test, y_test
 training_pair = x_train, y_train
-with open('../datasets/Bot/validation_dataset.pickle', 'wb') as f:
+with open('./datasets/Bot/validation_dataset.pickle', 'wb') as f:
     pickle.dump(validation_pair, f)
 
-with open('../datasets/Bot/train_dataset.pickle', 'wb') as f:
+with open('./datasets/Bot/train_dataset.pickle', 'wb') as f:
     pickle.dump(training_pair, f)

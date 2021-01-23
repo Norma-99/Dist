@@ -40,4 +40,4 @@ model.compile(
 
 model.summary()
 
-model.fit(x_train, y_train, validation_data=(x_test,y_test),batch_size=64, epochs=100)
+model.fit(x_train, y_train, validation_data=(x_test,y_test),batch_size=64, epochs=30)

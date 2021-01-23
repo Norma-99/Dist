@@ -1,7 +1,7 @@
 {
     "server_config":{
       "dataset_path": "./datasets/Bot/validation_dataset.pickle",
-      "model_path": "./configs/Bot/model.json",
+      "model_path": "./configs/Bot/ffnn/model.json",
       "trace_path": "./results/Bot/ffnn/5nodes/dist_5nodes.csv",
       "epochs": 1
     },

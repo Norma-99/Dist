@@ -12,7 +12,7 @@ def main() -> int:
     parser.add_argument('--noise_variance', type=float, required=False)
     args = parser.parse_args()
 
-    model = Sequential([InputLayer(input_shape=(39,))]) #(87,) or (74,)
+    model = Sequential([InputLayer(input_shape=(31,))]) #(87,) or (74,)
     if args.has_gaussian:
         model.add(GaussianNoise(args.noise_variance))
     for i in range(args.hidden_count):

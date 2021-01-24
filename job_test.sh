@@ -6,5 +6,5 @@
 
 PYTHON="/scratch/nas/4/norma/venv/bin/python"
 
-$PYTHON scripts/hyper_lstm_kdd.py
+$PYTHON ./dist/KDD/KDD_lstm.py
 

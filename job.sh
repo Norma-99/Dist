@@ -7,11 +7,11 @@
 PYTHON="/scratch/nas/4/norma/venv/bin/python"
 CONFIG_FOLDER="/scratch/nas/4/norma/Dist/configs" 
 
-for i in 5
+for i in 1
 do
-	for j in {2..20}
+	for j in {1..20}
 	do
-		$PYTHON -m differential_privacy --config=$CONFIG_FOLDER/Bot/ffnn/${i}nodes.json
-		mv ./results/Bot/ffnn/${i}nodes/dist_${i}nodes.csv ./results/Bot/ffnn/${i}nodes/dist_${i}nodes_it${j}.csv
+		$PYTHON -m differential_privacy --config=$CONFIG_FOLDER/Bot/lstm/${i}nodes.json
+		mv ./results/Bot/lstm/${i}nodes/dist_${i}nodes.csv ./results/Bot/lstm/${i}nodes/dist_${i}nodes_it${j}.csv
 	done
 done

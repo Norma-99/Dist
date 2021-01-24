@@ -7,7 +7,6 @@ class Dataset:
         self.y = y
     
     def get(self):
-        self.x = np.reshape(self.x, self.x.shape + (1,))
         return self.x, self.y
 
     def get_split(self, index: int, split_count: int):

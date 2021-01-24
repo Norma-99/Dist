@@ -11,13 +11,9 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('--hidden_count', type=int, required=True)
     parser.add_argument('--layer_size', type=int, required=True, nargs='+')
-    parser.add_argument('--has_gaussian', type=bool, default=False)
-    parser.add_argument('--noise_variance', type=float, required=False)
     args = parser.parse_args()
 
-    model = Sequential([InputLayer(input_shape=(31,1,))]) 
-    if args.has_gaussian:
-        model.add(GaussianNoise(args.noise_variance))
+    model = Sequential([InputLayer(input_shape=(121,1,))]) 
     for i in range(args.hidden_count):
         model.add(LSTM(args.layer_size[i], return_sequences=True))
     model.add(Dense(1, activation='sigmoid'))

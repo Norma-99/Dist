@@ -14,14 +14,14 @@ def load_data(path):
         return pickle.load(f)
 
 
-x_train, y_train = load_data('./datasets/Bot/validation_dataset.pickle')
-x_test, y_test = load_data('./datasets/Bot/train_dataset.pickle')
+x_train, y_train = load_data('../../datasets/Bot/validation_dataset.pickle')
+x_test, y_test = load_data('../../datasets/Bot/train_dataset.pickle')
 
 """***********MODELO FINAL**********"""
 
 
-x_train = np.reshape(x_train, x_train.shape + (1,))
-x_test = np.reshape(x_test, x_test.shape + (1,))
+# x_train = np.reshape(x_train, x_train.shape + (1,))
+# x_test = np.reshape(x_test, x_test.shape + (1,))
 
 print(x_train.shape)
 

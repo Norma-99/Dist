@@ -48,8 +48,8 @@ x_test = StandardScaler().fit_transform(x_test)
 y_train = y_traindf.to_numpy()
 y_test = y_testdf.to_numpy()
 
-x_train = np.reshape(x_train, x_train.shape + (1,))
-x_test = np.reshape(x_test, x_test.shape + (1,))
+#x_train = np.reshape(x_train, x_train.shape + (1,))
+#x_test = np.reshape(x_test, x_test.shape + (1,))
 
 # Save information into .pickle format
 validation_pair = x_test, y_test

@@ -1,7 +1,7 @@
-import keras
+import tensorflow as tf
 
-from keras.models import Sequential
-from keras.layers import Dense, Dropout
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
 
 import pickle
 
@@ -14,8 +14,8 @@ def load_data(path):
         return pickle.load(f)
 
 
-x_train, y_train = load_data('./datasets/KDD/validation_dataset.pickle')
-x_test, y_test = load_data('./datasets/KDD/train_dataset.pickle')
+x_train, y_train = load_data('../../datasets/KDD/validation_dataset.pickle')
+x_test, y_test = load_data('../../datasets/KDD/train_dataset.pickle')
 
 """***********PRE-TRAINING**********"""
 model=Sequential()
@@ -31,7 +31,7 @@ model.add(Dense(188, activation='tanh'))
 model.add(Dropout(0.35))
 model.add(Dense(1, activation='sigmoid'))
 
-opt = keras.optimizers.Adam(learning_rate=0.001)
+opt = tf.keras.optimizers.Adam(learning_rate=0.001)
 model.compile(loss="binary_crossentropy", optimizer=opt,metrics = ['accuracy'])
 model.fit(x_train, y_train, validation_data=(x_test,y_test),batch_size=68, epochs=20, verbose=2)
 """modelo decoder"""

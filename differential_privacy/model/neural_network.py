@@ -10,14 +10,14 @@ from tensorflow.keras.layers import Dense, Dropout
 class NeuralNetwork:
     def __init__(self, tf_model, epochs, validation_dataset, trace_path):
         self.tf_model: tf.keras.Model = tf_model
-        self.tf_model.compile(optimizer='sgd', loss='binary_crossentropy', metrics=['accuracy'])
+        self.tf_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
         self.epochs: int = epochs
         self.validation_dataset: Dataset = validation_dataset
         self.trace_path = trace_path
 
     def fit(self, data:Dataset) -> Gradient:
         initial_weights = self.tf_model.get_weights()
-        self.tf_model.fit(*data.get(), batch_size=1, epochs=self.epochs, verbose=2)
+        self.tf_model.fit(*data.get(), batch_size=68, epochs=self.epochs, verbose=2)
         final_weights = self.tf_model.get_weights()
         return Gradient.from_delta(initial_weights, final_weights)
 

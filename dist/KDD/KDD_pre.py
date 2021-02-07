@@ -38,8 +38,8 @@ x_test=normalise(x_test)
 print(x_train.shape)
 print(y_train.shape)
 
-x_train = np.reshape(x_train, x_train.shape + (1,))
-x_test = np.reshape(x_test, x_test.shape + (1,))
+#x_train = np.reshape(x_train, x_train.shape + (1,))
+#x_test = np.reshape(x_test, x_test.shape + (1,))
 
 # Save information into .pickle format
 validation_pair = x_test, y_test

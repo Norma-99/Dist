@@ -3,6 +3,7 @@
 ## Execution commands 
 
 To execute a shell script in Sert 
+
 Note: you can add some parameters (-q, --constraint, --mem)
 
 ```bash
@@ -27,7 +28,7 @@ To generate an LSTM Neural Network model
 python3 scripts/generate_lstm.py --hidden_count 3 --layer_size 32 32 32 > configs/desired_dir/model.json
 ```
 
-## Project folders
+## Project folders description
 
 In the config folder you will find the different configurations for each network to execute. The config files contain the number of fog nodes, the number of iterations, epochs, name of the results folder etc... You can also find the model generated with the above command. 
 
@@ -35,6 +36,7 @@ The preprocessing files are found in the dist/ directory. All datasets (.pickle)
 In the dist folder it can also be found the entire models without the distributed architecture applied. 
 
 It can be found two different jobs, one to execute Neural Networks without the distributed framework (job_test.sh) and another that runs the distributed framewowrk (job.sh). 
+
 Note: In order to this files to work all the environment must be set as in the script. 
 
 In the results/ folder all the results of the executions can be found. 

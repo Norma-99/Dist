@@ -30,16 +30,16 @@ python3 scripts/generate_lstm.py --hidden_count 3 --layer_size 32 32 32 > config
 
 ## Project folders description
 
-In the config folder you will find the different configurations for each network to execute. The config files contain the number of fog nodes, the number of iterations, epochs, name of the results folder etc... You can also find the model generated with the above command. 
+In the config folder, you will find the different configurations for each network to execute. The config files contain the number of fog nodes, the number of iterations, epochs, name of the results folder etc... You can also find the model generated with the above command. 
 
 The preprocessing files are found in the dist/ directory. All datasets (.pickle) generated from the preprocessing are stored in the datasets/ folder. 
-In the dist folder it can also be found the entire models without the distributed architecture applied. 
+In the dist/ folder, it can also be found the entire models without the distributed architecture applied. 
 
-It can be found two different jobs, one to execute Neural Networks without the distributed framework (job_test.sh) and another that runs the distributed framewowrk (job.sh). 
+Two different jobs can be found, one to execute Neural Networks without the distributed framework (job_test.sh) and another that runs the distributed framework (job.sh). 
 
 Note: In order to this files to work all the environment must be set as in the script. 
 
-In the results/ folder all the results of the executions can be found. 
+In the results/ folder, all the results of the executions can be found. 
 
 The last folder is the differential_privacy/ folder. This folder is where the distributed architecture is stored. 
 The only script that you will need to touch is neural_network.py to adapt your network to the one in the architecture. The rest is set and ready to go. 
